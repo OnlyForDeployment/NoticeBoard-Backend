@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: noticeboard-backend
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    plan: free
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://xabcxyz19:xabcxyz19@cluster0.ipvgacm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
